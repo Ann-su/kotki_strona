@@ -74,29 +74,18 @@ body {
     /* Wewnętrzny odstęp */
     border: 2px solid #D52941;
     background-color: #FFF8E8;
-    /* Obramowanie */
     width: 50%;
     /* Szerokość kontenera */
     margin-left: auto;
-
     margin-right: auto;
-
     text-align: center;
 
 }
-
-
-
-/* Styl dla przycisku zmieniającego cytat */
 .quote-container button {
     padding: 10px 20px;
-    /* Wewnętrzny odstęp przycisku */
     margin-top: 15px;
-    /* Odstęp od góry przycisku */
     background-color: #D52941;
-    /* Kolor tła przycisku */
     color: #FFF8E8;
-    /* Kolor tekstu przycisku */
     border: none;
     /* Usunięcie obramowania */
     cursor: pointer;
