@@ -6,16 +6,22 @@ ul {
 }
 
 body {
-    background-color: pink;
+    background-color: #FFF8E8;
 }
+
+/* Styl nagłówka */
 .header {
-      background-color: #D52941;
+    background-color: #D52941;
     color: #FFF8E8;
+    /* Kolor tekstu */
     padding: 20px;
+    /* Wewnętrzny odstęp nagłówka */
     display: flex;
+    /* Użycie flexbox dla nagłówka */
     justify-content: space-between;
     align-items: center;
 }
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -26,8 +32,6 @@ body {
     margin-right: 10px;
     /* Dodatkowy odstęp między logiem a tekstem */
 }
-
-
 
 .menu ul {
     list-style: none;
@@ -44,36 +48,41 @@ body {
     font-size: 30px;
     color: white;
     transition: color 0.3s, transform 0.3s, border 0.3s;
-   
+
     border: 2px solid transparent;
+    /* Początkowe przezroczyste obramowanie */
     padding: 5px 10px;
 
     border-radius: 5px;
-  
+    /* Zaokrąglenie rogów */
 }
 
 .menu ul li a:hover {
     color: pink;
+    /* Zmiana koloru po najechaniu */
     transform: scale(1.1);
+
     border-color: #fff;
 
 }
+
 /* Styl dla kontenera z cytatem */
 .quote-container {
     margin-top: 30px;
-   
+    /* Odstęp od góry */
     padding: 20px;
-  
-    border: 2px solid #333;
-   
+    /* Wewnętrzny odstęp */
+    border: 2px solid #D52941;
+    background-color: #FFF8E8;
+    /* Obramowanie */
     width: 50%;
-  
+    /* Szerokość kontenera */
     margin-left: auto;
-    /* Auto margines z lewej strony */
+
     margin-right: auto;
-    /* Auto margines z prawej strony */
+
     text-align: center;
-    /* Wyśrodkowanie tekstu */
+
 }
 
 
@@ -83,8 +92,10 @@ body {
     padding: 10px 20px;
     /* Wewnętrzny odstęp przycisku */
     margin-top: 15px;
-    border: 2px solid #D52941;
-    background-color: #FFF8E8;
+    /* Odstęp od góry przycisku */
+    background-color: #D52941;
+    /* Kolor tła przycisku */
+    color: #FFF8E8;
     /* Kolor tekstu przycisku */
     border: none;
     /* Usunięcie obramowania */
