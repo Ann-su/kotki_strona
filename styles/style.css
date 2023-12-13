@@ -8,8 +8,6 @@ ul {
 body {
     background-color: pink;
 }
-
-/* Styl nagłówka */
 .header {
     background-color: green;
     color: white;
@@ -21,7 +19,16 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* Wyśrodkowanie w pionie */
+}
 
+.logo-container img {
+    margin-right: 10px;
+    /* Dodatkowy odstęp między logiem a tekstem */
+}
 
 
 
