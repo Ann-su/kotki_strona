@@ -57,3 +57,49 @@ body {
     border-color: #fff;
 
 }
+/* Styl dla kontenera z cytatem */
+.quote-container {
+    margin-top: 30px;
+    /* Odstęp od góry */
+    padding: 20px;
+    /* Wewnętrzny odstęp */
+    border: 2px solid #333;
+    /* Obramowanie */
+    width: 50%;
+    /* Szerokość kontenera */
+    margin-left: auto;
+    /* Auto margines z lewej strony */
+    margin-right: auto;
+    /* Auto margines z prawej strony */
+    text-align: center;
+    /* Wyśrodkowanie tekstu */
+}
+
+
+
+/* Styl dla przycisku zmieniającego cytat */
+.quote-container button {
+    padding: 10px 20px;
+    /* Wewnętrzny odstęp przycisku */
+    margin-top: 15px;
+    /* Odstęp od góry przycisku */
+    background-color: #333;
+    /* Kolor tła przycisku */
+    color: white;
+    /* Kolor tekstu przycisku */
+    border: none;
+    /* Usunięcie obramowania */
+    cursor: pointer;
+    /* Zmiana kursora po najechaniu */
+    transition: background-color 0.3s;
+    /* Efekt przejścia */
+}
+
+.quote-container button:hover {
+    background-color: #555;
+}
+
+#quote {
+    font-size: 1.2em;
+
+}
