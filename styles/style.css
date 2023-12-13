@@ -1,4 +1,26 @@
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: pink;
+}
+
+/* Styl nagłówka */
+.header {
+    background-color: green;
+    color: white;
+    /* Kolor tekstu */
+    padding: 20px;
+    /* Wewnętrzny odstęp nagłówka */
+    display: flex;
+    /* Użycie flexbox dla nagłówka */
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
