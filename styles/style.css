@@ -10,12 +10,9 @@ body {
 }
 .header {
     background-color: green;
-    color: white;
-    /* Kolor tekstu */
+    color: #FCD581;
     padding: 20px;
-    /* Wewnętrzny odstęp nagłówka */
     display: flex;
-    /* Użycie flexbox dla nagłówka */
     justify-content: space-between;
     align-items: center;
 }
@@ -49,18 +46,15 @@ body {
     transition: color 0.3s, transform 0.3s, border 0.3s;
    
     border: 2px solid transparent;
-    /* Początkowe przezroczyste obramowanie */
     padding: 5px 10px;
 
     border-radius: 5px;
-    /* Zaokrąglenie rogów */
+  
 }
 
 .menu ul li a:hover {
     color: pink;
-    /* Zmiana koloru po najechaniu */
     transform: scale(1.1);
-
     border-color: #fff;
 
 }
