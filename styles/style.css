@@ -9,8 +9,8 @@ body {
     background-color: pink;
 }
 .header {
-    background-color: green;
-    color: #FCD581;
+      background-color: #D52941;
+    color: #FFF8E8;
     padding: 20px;
     display: flex;
     justify-content: space-between;
