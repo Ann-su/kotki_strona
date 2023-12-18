@@ -86,13 +86,10 @@ body {
 /* Styl dla kontenera z cytatem */
 .quote-container {
     margin-top: 1em;
-    /* Odstęp od góry */
     padding: 1em;
-    /* Wewnętrzny odstęp */
     border: 2px solid #D52941;
     background-color: #FFF8E8;
     width: 50%;
-    /* Szerokość kontenera */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
