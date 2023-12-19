@@ -102,3 +102,16 @@ body {
     font-size: 1.2em;
 
 }
+
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D52941;
+    color: #fff;
+}
+
+.footer p {
+    margin: 5px 0;
+}
