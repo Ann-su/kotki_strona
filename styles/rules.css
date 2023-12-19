@@ -60,8 +60,13 @@ body {
 }
 
 .footer {
+    margin-top: 100px; /*margin-top:auto;*/
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: #D52941;
-    color: #333;
+    color: #fff;
+}
+
+.footer p {
+    margin: 5px 0;
 }
