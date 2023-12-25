@@ -4,49 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/all.min.css"/> -->
+    <title>The best cat loaf contest</title>
 </head>
 <body>
     <header class="header">
-        <header class="header">
         <div class="logo-container">
-            <img src="logo.jpg" alt="Logo Strony">
-            <h1>Strona konkursowa cat loaf</h1>
+            <img id="logo" src="../materials/logo.jpg" alt="Logo Strony">
         </div>
-
-
         <nav class="menu">
             <ul>
-                <li><a href="registration.html">Registration form</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="guide.html">Guide</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../htmls/registration.html">Registration</a></li>
+                <li><a href="../htmls/rules.html">Rules</a></li>
+                <li><a href="../htmls/guide.html">Guide</a></li>
+                <li><a href="../htmls/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-      <div class="quote-container">
-        <p id="quote">Cytat dnia: Tutaj będzie się zmieniać cytat</p>
-        <button onclick="changeQuote()">Zmień Cytat</button>
+    <div class="main_container">
+        <div class="left_column">
+            <div class="quote-container">
+                <p id="quote">Cytat dnia: Tutaj będzie się zmieniać cytat</p>
+                <button onclick="changeQuote()">Zmień Cytat</button>
+            </div>
+            <h1>The bestest cat loaf</h1>
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="../materials/cat-sit-loaf.webp" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="../materials/under_the_cat.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="../materials/Placeholder_view_vector.svg.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+              <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <script src="../scripts/slideshow.js"></script>
+        <div class="right_column">
+            <img src="../materials/under_the_cat.jpg" alt="Cat">
+        </div>        
     </div>
-
-    <script>
-        // Lista przykładowych cytatów
-        const quotes = [
-            "Pies je. Kot jada.",
-            "Na myszy zawsze łasy kot.",
-            "Psy mają swoich panów, koty – służących",
-            "Kot działa według zasady: proś, a może Ci dam.",
-          "Kot ma zbyt wielką duszę, by nie mieć serca.",
-            "Koty są istotami tajemniczymi, w ich umysłach jest więcej niż możemy sobie wyobrazić.",
-        "Kotom bez trudu udaje się to, co nie jest dane człowiekowi: iść przez życie nie czyniąc hałasu"
-        ];
-
-        function changeQuote() {
-            const quoteElement = document.getElementById("quote");
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            quoteElement.innerText = "Lucky quote of the day: " + quotes[randomIndex];
-        }
-    </script>
+    <script src="../scripts/quotes.js"></script>
+      <footer class="footer">
+        <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved</p>
+    </footer>
 </body>
 </html>

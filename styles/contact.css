@@ -1,0 +1,91 @@
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF8E8;
+}
+
+.header {
+    background-color: #D52941;
+    color: #FFF8E8;
+    padding: 0.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-container img {
+    margin-right: 1em;
+    margin-bottom: 0;
+    width: 20%;
+}
+
+/* CSS dla formularza kontaktowego */
+.contact-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF8E8;
+    border-radius: 5px;
+    border: #D52941 solid;
+}
+
+.contact-form h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #D52941;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #D52941;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact-form button:hover {
+    background-color: #9c1f2e;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 100px;
+    /*margin-top:auto;*/
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D52941;
+    color: #fff;
+}
+
+.footer p {
+    margin: 5px 0;
+}

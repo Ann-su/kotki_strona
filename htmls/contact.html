@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/contact.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>The best cat loaf contest</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="logo-container">
+            <img id="logo" src="logo.jpg" alt="Logo Strony">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="guide.html">Guide</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="contact-form">
+            <h1>Skontaktuj się z nami</h1>
+            <p>Masz pytania lub potrzebujesz pomocy? Napisz do nas!</p>
+            <form>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved</p>
+
+    </footer>
 </body>
+
 </html>
