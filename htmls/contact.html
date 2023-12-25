@@ -4,49 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <title>The best cat loaf contest</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img id="logo" src="logo.jpg" alt="Logo Strony">
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="registration.html">Registration</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="guide.html">Guide</a></li>
-
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header class="header">
+              <div class="logo-container">
+                <a href="./index.html">
+                    <img id="logo" src="../materials/cat_logo3.png" alt="Logo Strony">
+                </a>
+              </div>
+              <nav class="menu">
+                  <ul>
+                    <li><a href="../htmls/index.html">Strona główna</a></li>
+                    <li><a href="../htmls/registration.html">Rejestracja</a></li>
+                    <li><a href="../htmls/guide.html">Poradnik</a></li>
+                    <li><a href="../htmls/rules.html">Regulamin</a></li>
+                  </ul>
+              </nav>
+          </header>
     <main>
-
+        <div class="google-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.1777700964894!2d14.999888276955973!3d51.63826940113405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47089b2d446cde05%3A0x465b8da0fe9d0e1!2zxYHEhWN6bmEgNDMsIDY4LTIxMyBMaXBpbmtpIMWBdcW8eWNraWU!5e0!3m2!1spl!2spl!4v1703511633631!5m2!1spl!2spl" 
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
         <section class="contact-form">
             <h1>Skontaktuj się z nami</h1>
             <p>Masz pytania lub potrzebujesz pomocy? Napisz do nas!</p>
             <form>
-                <label for="name">Imię:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Wiadomość:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
+                <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" rows="4" placeholder="Treść wiadomości..." required></textarea>
                 <button type="submit">Wyślij</button>
             </form>
         </section>
-
-    </main>
-
+        </main>
     <footer class="footer">
-        <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved</p>
+        <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved ᓚᘏᗢ</p>
 
     </footer>
 </body>

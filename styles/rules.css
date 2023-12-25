@@ -1,44 +1,18 @@
-/* Resetowanie domyślnych stylów */
-body,
-h1,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #FFF8E8;
-}
-
-.header {
-    background-color: #D52941;
-    color: #FFF8E8;
-    padding: 0.1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu ul {
-    list-style-type: none;
-}
-
-.menu ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #333;
+body{
+    background-image: url('../materials/cat_frame.jpg');
+    height: 40em;
+    background-position: left center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }
 
 .main-content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFF8E8;
-    box-shadow: 0 2px 4px #D52941;
+    background-color: #fff4e9;
+    border: #7a6174 solid;
+    box-shadow: 0 2px 4px #7a6174;
 }
 
 .rules-section h1 {
@@ -59,14 +33,3 @@ body {
     margin-bottom: 10px;
 }
 
-.footer {
-    margin-top: 100px; /*margin-top:auto;*/
-    text-align: center;
-    padding: 20px 0;
-    background-color: #D52941;
-    color: #fff;
-}
-
-.footer p {
-    margin: 5px 0;
-}

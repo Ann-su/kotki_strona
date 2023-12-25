@@ -3,65 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/all.min.css"/> -->
-    <title>The best cat loaf contest</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <title>The best cat loaf</title>
+    <script src="../scripts/mobile-menu.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <img id="logo" src="../materials/logo.jpg" alt="Logo Strony">
+          <a href="./index.html">
+            <img id="logo" src="../materials/cat_logo3.png" alt="Logo Strony">
+          </a>
         </div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="menu-container">
+          <ul>
+              <li><a href="../htmls/registration.html">Rejestracja</a></li>
+              <li><a href="../htmls/guide.html">Poradnik</a></li>
+              <li><a href="../htmls/rules.html">Regulamin</a></li>
+              <li><a href="../htmls/contact.html">Kontakt</a></li>
+          </ul>
+      </div>
         <nav class="menu">
             <ul>
-                <li><a href="../htmls/registration.html">Registration</a></li>
-                <li><a href="../htmls/rules.html">Rules</a></li>
-                <li><a href="../htmls/guide.html">Guide</a></li>
-                <li><a href="../htmls/contact.html">Contact</a></li>
+                <li><a href="../htmls/registration.html">Rejestracja</a></li>
+                <li><a href="../htmls/guide.html">Poradnik</a></li>
+                <li><a href="../htmls/rules.html">Regulamin</a></li>
+                <li><a href="../htmls/contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <div class="main_container">
         <div class="left_column">
-            <div class="quote-container">
-                <p id="quote">Cytat dnia: Tutaj będzie się zmieniać cytat</p>
-                <button onclick="changeQuote()">Zmień Cytat</button>
-            </div>
-            <h1>The bestest cat loaf</h1>
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                  <img src="../materials/cat-sit-loaf.webp" style="width:100%">
-                  <div class="text">Caption Text</div>
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="../materials/under_the_cat.jpg" style="width:100%">
-                  <div class="text">Caption Two</div>
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="../materials/Placeholder_view_vector.svg.png" style="width:100%">
-                  <div class="text">Caption Three</div>
-                </div>              
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-              <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+          <div class="info-container">
+            <h1>Konkurs na najlepszy koci bochenek</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit hic sequi nobis perspiciatis earum! 
+              Eaque distinctio corporis odio culpa asperiores quod nesciunt temporibus quae accusamus optio ullam, 
+              aliquam dolores. Vitae.
+            </p>
+            <a href="./rules.html"><button>Więcej</button></a>
+          </div>
         </div>
-        <script src="../scripts/slideshow.js"></script>
         <div class="right_column">
-            <img src="../materials/under_the_cat.jpg" alt="Cat">
+            <img src="../materials/cat_logo2.png" alt="Cat">
         </div>        
     </div>
-    <script src="../scripts/quotes.js"></script>
-      <footer class="footer">
-        <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved</p>
+    <div class="below">
+      <h1>Zwyciężcy ubiegłych lat</h1>
+      <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="../materials/cat-sit-loaf.webp" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="../materials/under_the_cat.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="../materials/Placeholder_view_vector.svg.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>              
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+        <!-- The dots/circles -->
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </div>
+    <script src="../scripts/slideshow.js"></script>       
+    <footer class="footer">
+        <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved ᓚᘏᗢ</p>
     </footer>
 </body>
 </html>
