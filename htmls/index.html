@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style_media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <title>The best cat loaf</title>
     <script src="../scripts/mobile-menu.js"></script>
+    <script src="../scripts/scroll-top.js"></script>
 </head>
 <body>
     <header class="header">
+        <div id="#top"></div>
         <div class="logo-container">
           <a href="./index.html">
             <img id="logo" src="../materials/cat_logo3.png" alt="Logo Strony">
@@ -28,7 +31,7 @@
               <li><a href="../htmls/rules.html">Regulamin</a></li>
               <li><a href="../htmls/contact.html">Kontakt</a></li>
           </ul>
-      </div>
+        </div>
         <nav class="menu">
             <ul>
                 <li><a href="../htmls/registration.html">Rejestracja</a></li>
@@ -49,39 +52,47 @@
             </p>
             <a href="./rules.html"><button>Więcej</button></a>
           </div>
+
         </div>
+                
         <div class="right_column">
-            <img src="../materials/cat_logo2.png" alt="Cat">
-        </div>        
+            <div class="photo_cat">
+              <img src="../materials/cat_logo2.png" alt="Cat">
+            </div>
+        </div>   
+        <div id="see_below">
+          <a href=#below><button>Zobacz zwyciężców ubiegłych lat </button></a>
+          <div class="arrow-down">&#129175;</div>
+        </div>     
     </div>
-    <div class="below">
+    <div id="below">
       <h1>Zwyciężcy ubiegłych lat</h1>
-      <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
+      <div class="slideshow-container">          
           <div class="mySlides fade">
             <img src="../materials/cat-sit-loaf.webp" style="width:100%">
-            <div class="text">Caption Text</div>
+            <div class="text">1. miejsce</div>
           </div>
         
           <div class="mySlides fade">
             <img src="../materials/under_the_cat.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <div class="text">2. miejsce</div>
           </div>
         
           <div class="mySlides fade">
             <img src="../materials/Placeholder_view_vector.svg.png" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text">3. miejsce</div>
           </div>              
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-        <!-- The dots/circles -->
       <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
       </div>
+      <a href="#top" class="scroll-to-top-button">&#8679; Na górę</a>
   </div>
+  
     <script src="../scripts/slideshow.js"></script>       
     <footer class="footer">
         <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved ᓚᘏᗢ</p>

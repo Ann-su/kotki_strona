@@ -6,27 +6,6 @@
     align-items: top;
     padding: 0.1em;
 }
-.left_column
-{
-    flex: 1;
-    text-align: center;
-    padding: 1em;
-}
-.right_column
-{
-    flex: 1;
-    text-align: center;
-    padding: 1em;
-}
-.left_column p, h1
-{
-    padding: 1em;
-}
-.right_column form
-{
-    width: 100%;
-    height: auto;
-}
 
 /*==CSS dla formularza kontaktowego=================================================*/
 .contact-form {
@@ -81,82 +60,4 @@
 
 .contact-form button:hover {
     background-color: #9c1f2e;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 50%;
-    position: relative;
-    margin: auto;
-}
-  
-.mySlides {
-    display: none;
-}
-  
-.prev, .next 
-{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 10px;
-    color: rgba(0, 0, 0, 0.253);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-  /* Position the "next button" to the right */
-  .next {
-      right: 0.5em;
-      border-radius: 3px 0 0 3px;
-  }
-  .prev
-  {
-      left: 0.5em;
-      border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 3px;
-  }
-  
-.text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-dot {
-    cursor: pointer;
-    height: 0.5em;
-    width: 0.5em;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-.active, .dot:hover {
-    background-color: #717171;
-}
-  
-  /* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
 }

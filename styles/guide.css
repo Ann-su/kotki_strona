@@ -2,52 +2,61 @@
 /*==Main container==============================================================*/
 .main_container
 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: top;
-    width: 115em;
-    padding: 0.1em;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0.1em;
+  margin: 0 auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-.left_column
-{
-    flex: 1;
-    align-self: right;
-    text-align: center;
-    padding: 1em;
+.left_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  padding: 2em;
+  padding-bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 0;
+  box-sizing: border-box; 
+  width: 50%; 
+  position: relative;
 }
-.right_column
-{
-    flex: 1;
-    text-align: left;
-    padding: 1em;
+
+.right_column {
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  width: 50%;
 }
-.left_column p, h1, img
+
+.left_column p, h1
 {
     padding: 1em;
 }
 .right_column img
 {
-    height: 70%;
+    padding: 0;
+    height: 65%;
     width: auto;
 }
 
 /*==Styl dla kontenera z cytatem===================================================*/
 .quote-container {
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin: 4em 2em 2em 2em;
     padding: 1em;
     border: 2px solid #cd8987;
     background-color: #FFF8E8;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 55%;
+    height: 30%;
     text-align: center;
-
 }
 .quote-container button {
-    padding: 10px 20px;
-    margin-top: 15px;
+    padding: 1em 2em;
+    margin-top: 2em;
     background-color: #cd8987;
     color: #FFF8E8;
     border: none;
@@ -55,96 +64,16 @@
     cursor: pointer;
     /* Zmiana kursora po najechaniu */
     transition: background-color 0.3s;
-    /* Efekt przejścia */
 }
 
 .quote-container button:hover {
-    background-color: #555;
+    background-color: #a76967;
+    transform: scale(1.1);
 }
 
 #quote {
-    font-size: 1.2em;
-}
+  font-family: 'Caveat', cursive;
+  font-style: italic;
+  font-size: 1.5em;}
 
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 50%;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.prev, .next 
-{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 10px;
-    color: rgba(0, 0, 0, 0.253);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0.5em;
-    border-radius: 3px 0 0 3px;
-}
-.prev
-{
-    left: 0.5em;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  border-radius: 3px;
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 0.5em;
-  width: 0.5em;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
