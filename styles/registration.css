@@ -26,8 +26,8 @@
 .contact-form form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
-    padding: 1px;
+    margin-bottom: 2em;
+    padding: 1em;
 
 }
 
@@ -39,7 +39,7 @@
     padding: 0.5em;
     width: 100%;
     max-width: 100%;
-    height: 1px;
+    height: 1em;
 }
 
 .contact-form input {
