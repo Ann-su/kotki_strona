@@ -1,128 +1,176 @@
-body{
-    background-image: url('../materials/cat_frame.jpg');
-    height: 40em;
-    background-position: left center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+body {
+  background-image: url('../materials/cat_frame.jpg');
+  height: 40em;
+  background-position: left center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
 }
 
 .main-content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff4e9;
-    border: #7a6174 solid;
-    box-shadow: 0 2px 4px #7a6174;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff4e9;
+  border: #7a6174 solid;
+  box-shadow: 0 2px 4px #7a6174;
 }
 
 .rules-section h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .rules-section p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+
+}
+
+a.regulamin-link {
+  color: inherit;
+  /* Twój wybrany kolor */
+  text-decoration: underline;
+  /* Usunięcie podkreślenia */
+}
+
+/* Stylowanie linku do kredytów */
+a.credits-link {
+  color: inherit;
+  /* Twój wybrany kolor */
+  text-decoration: underline;
+  /* Usunięcie podkreślenia */
 }
 
 .rules-section ol {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .rules-section ol li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #7a6174;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* Styl przycisku po najechaniu kursorem */
+.button:hover {
+  background-color: #cd8987;
+  transform: scale(1.1);
+
+}
+
 /* Styl dla rozwiniętego menu */
 .menu-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* Przykładowy kolor tła rozwiniętego menu */
-    z-index: 998;
-  }
-  
-  .menu-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .menu-container a {
-    display: block;
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5em;
-    transition: 0.3s;
-  }
-  
-  .menu-container a:hover {
-    background-color: #cd8987;
-    color: #fff;
-  }
-/* Media Query dla urządzeń o szerokości mniejszej niż 768px (mobile) */
-@media screen and (min-width: 900px)
-{
-    .hamburger-menu, .menu-container
-    {
-        display: none;
-    }
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Przykładowy kolor tła rozwiniętego menu */
+  z-index: 998;
 }
 
-@media screen and (max-width: 900px) 
-{
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menu-container a {
+  display: block;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.menu-container a:hover {
+  background-color: #cd8987;
+  color: #fff;
+}
+
+/* Media Query dla urządzeń o szerokości mniejszej niż 768px (mobile) */
+@media screen and (min-width: 900px) {
+
+  .hamburger-menu,
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
   body {
     font-size: 0.85em;
-    background-image: url('../materials/cat_frame.jpg'); /* Dodaj ścieżkę do obrazu */
-    background-size: cover; /* Dopasuj obraz do rozmiaru kontenera */
-    background-position: center; /* Ustawienie pozycji obrazu na środek */
+    background-image: url('../materials/cat_frame.jpg');
+    /* Dodaj ścieżkę do obrazu */
+    background-size: cover;
+    /* Dopasuj obraz do rozmiaru kontenera */
+    background-position: center;
+    /* Ustawienie pozycji obrazu na środek */
     padding: 1em;
     height: 31em;
-}
+  }
 
-h1{
-    font-size: 1.5em; /* Dostosuj rozmiar czcionki nagłówków i tekstu */
-}
+  h1 {
+    font-size: 1.5em;
+    /* Dostosuj rozmiar czcionki nagłówków i tekstu */
+  }
 
-.menu, .logo-container
- {
-    display: none; /* Ukryj te elementy na urządzeniach mobilnych */
-}
-.main-content
-{
+  .menu,
+  .logo-container {
+    display: none;
+    /* Ukryj te elementy na urządzeniach mobilnych */
+  }
+
+  .main-content {
     padding: 1em;
-}
-.rules-section
-{
+  }
+
+  .rules-section {
     padding: 1em;
-}
-.hamburger-menu {
-  display: block;
-  cursor: pointer;
-  position: fixed;
-  top: 2em;
-  right: 1em;
-  z-index: 999;
-}
+  }
 
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #cd8987;
-  margin: 6px 0;
-  transition: 0.4s;
-}
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 2em;
+    right: 1em;
+    z-index: 999;
+  }
 
-.menu-container.show {
-  display: block;
-}
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #cd8987;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .menu-container.show {
+    display: block;
+  }
 }
