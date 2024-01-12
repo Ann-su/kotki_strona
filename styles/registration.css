@@ -8,11 +8,11 @@
 /*==CSS dla formularza kontaktowego=================================================*/
 .contact-form {
     flex: 1;
-    max-width: 500px;
+    max-width: 40%;
     padding: 1em;
     background-color: #efe5dc;
     border: 1px solid #7a6174;
-    max-height: 800px;
+    max-height: 100%;
 }
 
 
@@ -79,8 +79,8 @@
 }
 
 input[type="file"] {
-    margin-bottom: 0.07em;
-    margin-top: 0.08em;
+    margin-bottom: 0.7em;
+    margin-top: 0.8em;
     padding: 0.5em;
     border-radius: 1px;
     background-color: #f9f9f9;
@@ -96,7 +96,7 @@ input[type="file"] {
 
 /* Styl dla paragrafów informacyjnych */
 .info-text {
-    margin-top: 8px;
+    margin-top: 0.8em;
     font-size: 1px;
     color: #888;
     text-align: center;
@@ -113,7 +113,7 @@ input[type="file"]:hover {
 
 /*////////////////////ZNAZNIK P///////////////////*/
 .contact-form p {
-    margin-top: 10px;
+    margin-top: 0.8em;
     font-size: 16px;
     text-align: center;
 }
