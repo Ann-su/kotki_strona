@@ -1,6 +1,5 @@
 body
 {
-  text-align: center;
   scroll-behavior: smooth;
 }
 html {
@@ -42,7 +41,10 @@ html {
 .left_column p, .left_column h1, .left_column img {
   padding: 1em;
 }
-
+h1 
+{
+  text-align: center;
+}
 .photo_cat img {
   max-width: 65%;
   max-height: auto;

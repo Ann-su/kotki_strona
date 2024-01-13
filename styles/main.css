@@ -4,8 +4,13 @@ h1,
 ul {
     margin: 0;
     padding: 0;
+    color: #4c3d48;
 }
-* {box-sizing:border-box}
+* 
+{
+    box-sizing:border-box;
+}
+
 body {
     background-color: #E6DDD5;
     background-image: url('../materials/cat_frame.jpg');
@@ -17,7 +22,7 @@ body {
 }
 .logo-container img {
     margin: 1em 0em 0em 1em;
-    width: 8em;
+    width: 6em;
     height: auto;
     /*background-color: #7a6174;
     border-radius: 25px;*/
