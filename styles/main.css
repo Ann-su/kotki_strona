@@ -1,0 +1,93 @@
+/*styl dla menu, headera i footera, kolor strony*/
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+    color: #4c3d48;
+}
+* 
+{
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #E6DDD5;
+    background-image: url('../materials/cat_frame.jpg');
+    height: 40em;
+    background-position: left center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+.logo-container img {
+    margin: 1em 0em 0em 1em;
+    width: 6em;
+    height: auto;
+    /*background-color: #7a6174;
+    border-radius: 25px;*/
+}
+
+.header {
+    color: #7a6174;
+    padding: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.menu
+{
+    flex-grow: 1;
+    padding: 1em;
+}
+.logo-container
+{
+    flex-grow: 1;
+}
+.menu ul {
+    list-style: none;
+    padding: 1em;
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 1em;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #332930;
+    font-weight: bolder;
+    transition: color 0.3s, transform 0.3s, border 0.3s;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    color: #8c7284;
+    transform: scale(1.5);
+    text-decoration: underline;
+}
+/* footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 0.1em 0;
+    background-color: #7a6174;
+    color: #fff;
+    border-radius: 25px 25px 0 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}

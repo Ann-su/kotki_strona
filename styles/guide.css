@@ -1,0 +1,78 @@
+/*==Main container==============================================================*/
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0.1em;
+  margin: 0 auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.left_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  padding: 2em;
+  padding-bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  width: 50%;
+  position: relative;
+}
+
+.right_column {
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.left_column p,
+h1 {
+  padding: 1em;
+}
+
+.right_column img {
+  padding: 0;
+  height: 65%;
+  width: auto;
+}
+
+/*==Styl dla kontenera z cytatem===================================================*/
+.quote-container {
+  margin: 0.8em 2em 2em 2em;
+  padding: 1em;
+  border: 2px solid #cd8987;
+  background-color: #FFF8E8;
+  width: 55%;
+  height: 34%;
+  text-align: center;
+}
+
+.quote-container button {
+  padding: 1em 2em;
+  margin-top: 2em;
+  background-color: #cd8987;
+  color: #FFF8E8;
+  border: none;
+  /* Usunięcie obramowania */
+  cursor: pointer;
+  /* Zmiana kursora po najechaniu */
+  transition: background-color 0.3s;
+}
+
+.quote-container button:hover {
+  background-color: #a76967;
+  transform: scale(1.1);
+}
+
+#quote {
+  font-family: 'Caveat', cursive;
+  font-style: italic;
+  font-size: 1.5em;
+}

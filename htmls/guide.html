@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/guide.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/guide.css">
+  <link rel="stylesheet" href="../styles/guide_media.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <title>The best cat loaf</title>
+  <script src="../scripts/mobile-menu.js"></script>
 </head>
+
 <body>
-    
+  <header class="header">
+    <div class="logo-container">
+      <a href="./index.html">
+        <img id="logo" src="../materials/cat_logo4.PNG" alt="Logo Strony">
+      </a>
+    </div>
+    </div>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="menu-container">
+      <ul>
+        <li><a href="../htmls/index.html">Strona główna</a></li>
+        <li><a href="../htmls/registration.html">Rejestracja</a></li>
+        <li><a href="../htmls/rules.html">Regulamin</a></li>
+        <li><a href="../htmls/contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="../htmls/index.html">Strona główna</a></li>
+        <li><a href="../htmls/registration.html">Rejestracja</a></li>
+        <li><a href="../htmls/rules.html">Regulamin</a></li>
+        <li><a href="../htmls/contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main_container">
+    <div class="left_column">
+      <div class="quote-container">
+        <p id="quote"><i>Cytat dnia: Posiadanie jednego kota prowadzi do posiadania następnego.</i></p>
+        <button onclick="changeQuote()">Zmień Cytat</button>
+      </div>
+    </div>
+    <div class="right_column">
+      <img src="../materials/cat_loaf_guide1.jpg" alt="Cat">
+    </div>
+    <script src="../scripts/quotes.js"></script>
+    <footer class="footer">
+      <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved ᓚᘏᗢ</p>
+    </footer>
 </body>
+
 </html>

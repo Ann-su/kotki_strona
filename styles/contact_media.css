@@ -1,0 +1,105 @@
+/* Styl dla rozwiniętego menu */
+.menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Przykładowy kolor tła rozwiniętego menu */
+    z-index: 998;
+  }
+  
+  .menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .menu-container a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    transition: 0.3s;
+  }
+  
+  .menu-container a:hover {
+    background-color: #cd8987;
+    color: #fff;
+  }
+/* Media Query dla urządzeń o szerokości mniejszej niż 768px (mobile) */
+@media screen and (min-width: 900px)
+{
+    .hamburger-menu, .menu-container
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) 
+{
+  body {
+    font-size: 0.85em;
+    background-image: url('../materials/cat_frame.jpg'); /* Dodaj ścieżkę do obrazu */
+    background-size: cover; /* Dopasuj obraz do rozmiaru kontenera */
+    background-position: center; /* Ustawienie pozycji obrazu na środek */
+    padding: 1em;
+    height: auto;
+}
+
+h1{
+    font-size: 1.5em; /* Dostosuj rozmiar czcionki nagłówków i tekstu */
+}
+
+.menu, .logo-container
+ {
+    display: none; /* Ukryj te elementy na urządzeniach mobilnych */
+}
+
+main {
+    flex-direction: column;
+    height: auto; 
+}
+
+.google-map {
+    order: 2; 
+    height: 30%;
+}
+
+.contact-form {
+    order: 1; 
+    max-width: 100%; 
+}
+
+.contact-form button {
+    width: 40%; 
+}
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  top: 0.5em;
+  right: 1em;
+  z-index: 999;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #cd8987;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-container.show {
+  display: block;
+}
+}

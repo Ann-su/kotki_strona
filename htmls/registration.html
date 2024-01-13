@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/registration.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/registration_media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <title>The best cat loaf contest</title>
+    <script src="../scripts/mobile-menu.js"></script>
+    <script src="../scripts/file.js"></script>
+
 </head>
+
 <body>
-    
-</body>
+
+    <body>
+        <header class="header">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img id="logo" src="../materials/cat_logo4.PNG" alt="Logo Strony">
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu-container">
+                <ul>
+                    <li><a href="../htmls/index.html">Strona główna</a></li>
+                    <li><a href="../htmls/guide.html">Poradnik</a></li>
+                    <li><a href="../htmls/rules.html">Regulamin</a></li>
+                    <li><a href="../htmls/contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../htmls/index.html">Strona główna</a></li>
+                    <li><a href="../htmls/guide.html">Poradnik</a></li>
+                    <li><a href="../htmls/rules.html">Regulamin</a></li>
+                    <li><a href="../htmls/contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main_container">
+            <section class="contact-form">
+                <h1>Registration Form</h1>
+                <form>
+                    <label for="firstName">Imię kota:</label><br>
+                    <input type="text" id="firstName" name="firstName" required><br>
+
+                    <label for="lastName">Nazwisko właściciela kotsa:</label><br>
+                    <input type="text" id="lastName" name="lastName" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="photo">Dołącz zdjęcie*:</label><br>
+                    <input type="file" id="photo" name="photo" accept="image/*" multiple required><br>
+
+                    <p class="info-text">*Zdjęcie nie może przekraczać 5MB.</p>
+                    <p class="info-text">*Potwierdzenie rejestracji oraz informacje o wynikach zostaną wysłane na podany
+                        adres e-mail.</p>
+                    <p>Jeśli potrzebujesz pomocy, <a href="contact.html">Skontaktuj się z nami</a>.</p>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+        </div>
+        <script src="../scripts/quotes.js"></script>
+        <footer class="footer">
+            <p>&copy; 2023 Anna Suska & Karolina Zając | All rights reserved ᓚᘏᗢ</p>
+        </footer>
+    </body>
+
 </html>
