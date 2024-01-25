@@ -50,9 +50,10 @@ h1 {
 }
 
 .photo_cat img {
-  max-width: 65%;
+  max-width: 85%;
   max-height: auto;
-  margin-right: 8em;
+  margin-right: 2em;
+  margin-top: 0em;
 }
 
 
