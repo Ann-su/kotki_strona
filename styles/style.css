@@ -73,7 +73,8 @@ h1 {
 }
 
 #see_below {
-  margin-top: 0.1em;
+  margin-bottom: 1em;
+  margin-top: -2em;
   text-align: center;
 }
 
